@@ -1,0 +1,7 @@
+apiVersion: v2
+name: tinyweb
+description: Minimal HTTP server
+maintainers:
+  - name: kmgrime
+version: 0.1.0
+appVersion: "1.0.0"

@@ -1,0 +1,6 @@
+image:
+  repository: tinyweb
+  tag: latest
+
+replicas: 1
+port: 443
