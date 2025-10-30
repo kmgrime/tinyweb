@@ -30,10 +30,10 @@ Build and run:
 podman build -t tinyweb .
 
 # Run on default port 8080
-podman run --rm -p 8080:8080 tinyweb
+podman run --rm --network=host tinyweb
 
 # Or map to port 443 (requires root)
-sudo podman run --rm -p 443:8080 tinyweb
+sudo podman run --rm --network=host tinyweb
 ```
 
 Test:
@@ -45,7 +45,7 @@ curl http://localhost:8080
 curl -k http://localhost:443
 ```
 
-## Kubernetes
+## Kubernetes (In progress)
 
 Install using Helm:
 ```bash
